@@ -20,7 +20,7 @@ onSearchSubmit = async (term) => {
     return (
         <div className="ui container" style={{ marginTop: '10px'}}>
             <SearchBar onSubmit={this.onSearchSubmit} />
-        <ImageList />
+        <ImageList images={this.state.images} />
         </div>
         )
     }
