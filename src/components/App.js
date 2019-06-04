@@ -1,6 +1,7 @@
 import Unsplash from '../api/Unsplash';
 import React from 'react';
 import SearchBar from './SearchBar'
+import ImageList from './ImageList';
 
 
 class App extends React.Component{
@@ -19,7 +20,7 @@ onSearchSubmit = async (term) => {
     return (
         <div className="ui container" style={{ marginTop: '10px'}}>
             <SearchBar onSubmit={this.onSearchSubmit} />
-            Found: {this.state.images.length} images
+        <ImageList />
         </div>
         )
     }
