@@ -2,7 +2,7 @@ import React from 'react'
 
 class ImageCard extends React.Component{
     
-    //creating a refernce for the image
+    //creating a reference for the image
     constructor(props){
         super(props);
         this.state = {spans: 0}
@@ -23,6 +23,7 @@ class ImageCard extends React.Component{
     
     render(){
 
+        //destructured the props for the image to reduce code
         const {description, urls} = this.props.image;
         return(
             <div style={{gridRowEnd: `span ${this.state.spans}`}}>
