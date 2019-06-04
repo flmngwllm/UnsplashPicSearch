@@ -2,6 +2,7 @@ import React from 'react';
 
 class SearchBar extends React.Component{
 
+    //state for the input that is entered
 state = { term: ''};
 
 onFormSubmit = (event) => {
@@ -11,6 +12,7 @@ onFormSubmit = (event) => {
 }
     render(){
         return(
+            //form and input 
             <div className= "ui segment">
                 <form onSubmit={this.onFormSubmit} className="ui form">
                     <div className="field">
